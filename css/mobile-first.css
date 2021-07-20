@@ -1,0 +1,229 @@
+/* Header */
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.header {
+  /* background-color: #ffeeb1; */
+  background-image: url('../images/Hero_BG.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  padding: 38px 0 235px 0;
+
+  /* padding-top: 38px;
+  padding-bottom: 235px; */
+  
+}
+
+.nav {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: large;
+  order: 2;
+  text-transform: uppercase;
+  color: white;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  order: 1;
+  margin-bottom: 115px;
+}
+
+.hero {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: xx-large;
+}
+.text{
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: large;
+  font-family: Roboto;
+  font-weight: 0;
+}
+
+
+
+/* ./Header */
+
+/* Partners */
+
+.partners {
+  padding-top: 70px;
+  padding-bottom: 136px;
+}
+
+.title {
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 25px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 55px;
+  column-gap: 35px;
+}
+
+.card {
+  align-items: center;
+  width: 100%;
+  height: 170px;
+  /* display: flex;
+  justify-content: center; */
+}
+.about{
+  margin-top: 10px;
+  text-align: center;
+  font-size: small;
+  font-family: Roboto;
+  font-weight: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+button{
+  font-family: Montserrat;
+  font-size: medium;
+  color: white;
+  margin: 0px 10px;
+  border-radius: 2rem;
+  padding: 10px;
+  background: none;
+  border-color: rgba(0, 0, 0, 0);
+}
+.finder{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.find{
+  text-align: center;
+  font-family: Montserrat;
+  font-size: medium;
+  margin-top: 20px;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  background-color: #ff4d4f;
+  border-color: rgba(0, 0, 0, 0);
+}
+.see{
+  text-align: center;
+  font-family: Montserrat;
+  font-size: medium;
+  margin-top: 60px;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 3px solid #ff4d4f;
+  color: #ff4d4f;
+}
+.signup{
+width: 92px;
+height: 43px;
+left: 73px;
+top: 0px;
+
+background: rgba(26, 25, 21, 0.0001);
+border: 3px solid #FFFFFF;
+}
+/* ./Partners */
+
+@media (min-width: 428px){
+  .header {
+    padding: 38px 30px 235px 30px;  
+  }
+
+  .nav {
+    flex-direction: row;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .controls {
+    margin: 0;
+    order: 2;
+  }
+
+  .hero{
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 320px) {
+  .signup{
+    padding: 0;
+    }
+
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .card{
+    height: 200px;
+  }
+  #one{
+    order: 1;
+  }
+  #two{
+    order: 3;
+  }
+  #three{
+    order: 2;
+  }
+  #four{
+    order: 4;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+ .hero{
+   margin-top: 100px;
+ }
+}
+
+@media (max-width: 214px){
+  .signup{
+    border: 3px solid #ffffff;
+    border-radius: 2rem;
+    }
+
+  .card{
+    height: 260px;
+  }
+}
+
+@media(max-width: 225px){
+  button{
+    padding: 0;
+    }
+}
