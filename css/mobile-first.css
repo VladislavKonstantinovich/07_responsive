@@ -26,6 +26,7 @@
 }
 
 .logo {
+    cursor: pointer;
     order: 2;
     color: #fff;
     font-size: 20px;
@@ -47,11 +48,24 @@
     margin: 0 10px;
     text-decoration: none;
     color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+#log-in:hover {
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    transition: .2s;
 }
 
 .sign-up {
     border: 2px solid #fff;
     border-radius: 2rem;
+}
+
+.sign-up:hover {
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 0;
+    transition: .2s;
 }
 
 .hero {
@@ -79,9 +93,18 @@
     background-color: #FF4E50;
     font-size: 16px;
     font-weight: bold;
-    border: none;
+    border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 2rem;
+    cursor: pointer;
 }
+
+.find:hover {
+    color: #FF4E50;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #FF4E50;
+    transition: .2s;
+}
+
 
 /* /header */
 
@@ -184,6 +207,13 @@ img {
     font-weight: bold;
     border: 2px solid #FF4E50;
     border-radius: 2rem;
+    cursor: pointer;
+}
+
+.see:hover {
+    color: #fff;
+    background-color: #FF4E50;
+    transition: .2s;
 }
 
 /* /Partners */
@@ -221,7 +251,7 @@ img {
     }
 }
 
-@media (min-width: 471px) {
+@media (min-width: 475px) {
     .logo {
         order: 1;
     }
@@ -232,7 +262,7 @@ img {
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 474px) {
     .header {
         padding: 38px 30px 235px 30px;  
       }
