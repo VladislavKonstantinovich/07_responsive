@@ -1,101 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive design</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- ./Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Fonts -->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- <link rel="stylesheet" href="css/desktop-first.css" /> -->
-    <link rel="stylesheet" href="css/mobile-first.css" />
-    <!-- ./CSS -->
-  </head>
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <div>
-            Urlaubslück
-          </div>
-        </div>
-        <div class="controls">
-          <button>Log In</button>
-          <button class="signup">Sign Up</button>
-        </div>
-      </nav>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/desktop-first.css"> -->
+    <link rel="stylesheet" href="css/mobile-first.css">
+    <!-- CSS -->
 
-      <div class="container">
-        <div class="hero">
-          Share your <br> holiday dreams
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <div>URLAUBSGLÜCK</div>
+            </div>
+            <div class="controls">
+                <a href="#" class="controls_link">Log in</a>
+                <a href="#" class="controls_link sign-up">Sign up</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="hero">
+                <h2 class="hero_title">Share your <br> holiday dreams</h2>
+                <p class="hero_text">
+                    And find the perfect partner to fullfill it
+                </p>
+
+                <button class="find">Find your holiday partner</button>
+            </div>      
         </div>
-        <div class="text">
-          <p>And find the perfect partner to fullfill it</p>
-        </div>
-      </div><div class="finder">
-      <button class="find">Find your holiday partner</button></div>
     </header>
 
     <main>
-      <section class="partners" style="padding-bottom: 50px;">
-        <div class="container">
-          <div class="title">Meet a partner for your best day</div>
+        <section class="partners">
+            <div class="container">
+                <div class="title"><h2>Meet a partner for your best holiday</h2></div>
+                
+                <div class="card-list">
+                    <div class="card" id="one">
+                        <div class="card_images">
+                            <img src="images/Bradley.png" alt="Bradley">
+                            <div class="container_icon icon_red">
+                                <img src="images/TV.png" alt="TV" class="card_icon">
+                            </div>                                
+                        </div>
+                        <h3 class="card_name">Bradley Hunter</h3>
+                        <p class="card_text">
+                            Based in Chicago. I love playing tennis and loud music.
+                        </p>
+                    </div>
+                    <div class="card" id="two">
+                        <div class="card_images">
+                            <img src="images/Heather.png" alt="Heather">
+                            <div class="container_icon icon_green">
+                                <img src="images/Coffee.png" alt="Coffee" class="card_icon">
+                            </div> 
+                        </div>
+                        <h3 class="card_name">Heather Walker</h3>
+                        <p class="card_text">
+                            I'm a happy person that loves cats and climbing on mountains.
+                        </p>
+                    </div>
+                    <div class="card" id="three">
+                        <div class="card_images">
+                            <img src="images/Lucas.png" alt="Lucas">
+                            <div class="container_icon icon_yellow">
+                                <img src="images/Chemistry.png" alt="Chemistry" class="card_icon">
+                            </div>
+                        </div>                        
+                        <h3 class="card_name">Lucas Marsha</h3>
+                        <p class="card_text">
+                            I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.
+                        </p>
+                    </div>
+                    <div class="card" id="four">
+                        <div class="card_images">
+                            <img src="images/Bradley_1.png" alt="Bradley_1">
+                            <div class="container_icon icon_blue">
+                                <img src="images/Paperplane.png" alt="Paperplane" class="card_icon">
+                            </div>
+                        </div>
+                        <h3 class="card_name">Bradley Hunter</h3>
+                        <p class="card_text">
+                            Based in Chicago. I love playing tennis and loud music.
+                        </p>
+                    </div>
+                </div>
 
-          <div class="card-list">
-            <div class="card" id="one">
-              <img src="images/Bradley2.png" alt="Bradley" />
-              <div style="text-align: center; margin-top: 13px;">
-                 Bradley Hunter
-                <div class="about">
-                 <p> Based in Chicago. I love playing tennis and loud music.</p>
+                <div class="container_see">
+                    <button class="see">See other partners</button>
                 </div>
-              </div>
             </div>
-            <div class="card" id="two">
-              <img src="images/Lucas2.png" alt="Lucas" />
-              <div style="text-align: center; margin-top: 13px;">
-                 Lucas Marsha
-                <div class="about">
-                 <p> I get my inspiration from nature and
-                  objects around me. I have a passion to
-                  colours, typography and skateboards.</p>
-                </div>
-              </div>
-            </div>
-            <div class="card" id="three">
-              <img src="images/Heather2.png" alt="Heather" />
-              <div style="text-align: center; margin-top: 13px;">
-                 Heather Walker
-                <div class="about">
-                 <p> I am a happy person that loves cats and
-                  climbing on mountains.</p>
-                </div>
-              </div>
-            </div>
-            <div class="card" id="four">
-              <img src="images/Bradley_12.png" alt="Bradley_1" />
-              <div style="text-align: center; margin-top: 13px;">
-                 Bradley Hunter
-                <div class="about">
-                 <p> Based in Chicago. I love playing tennis and loud music.</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <div class="finder"><button class="see">See other partners</button></div>
-        </div>
-      </section>
+        </section>
     </main>
-  </body>
+</body>
 </html>
